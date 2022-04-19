@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="Binary-guessing.css">
+</head>
+<body>
+
+<div class="introduction">
+    <h1>Binari guessing</h1>
+    <div>
+        Hello, my friend! Welcome to the "Guess the number" game! There are two gameplay types. Which one do you want to play?
+    </div>
+    <input type="submit" class="turn-game-one" value="Guess the number"></input>
+    <input type="submit" class="turn-game-two" value="Let the machine guess"></input>
+    <img src="maxresdefault.jpeg" alt="David J. Malan rips the phone book in halfs">
+    <p class="label">David J. Malan rips the phone book in halfs</p>
+</div>
+
+<div class="game-one one-settings">
+    <input type="submit" class="main" value="Main">
+    <div class="explanation">The machine guesses random number from 0 to max number you choose. You always have enough tries to identify the number.<br><br>So, my friend, enter max number and try yourself!</div>
+    <input type="number" class="maximum" placeholder="Enter max number">
+    <input type="number" class="numInp" placeholder="Try to guess the number"><br>
+    <input type="submit" class="check-button" value="Check">
+    <input type="submit" class="restart" value="Restart">
+    <div class="tries"></div>
+    <div class="prg-answer"></div>
+</div>
+
+<div class="game-two two-settings">
+    <input type="submit" class="restart2" value="Restart">
+    <input type="submit" class="main" value="Main">
+   <div class="explanation">In this game you have to guess the number from zero to some maximum. Write maximum and don't forget what you guessed =)</div>
+    <div class="inpits">
+        <input type="number" class="comp-max" placeholder="Enter max number">
+        <input type="button" class="fight" value="Start"><br>
+        <div class="explanation">When computer guess the number choose whether this number less or greater than you gueesed</div>
+        <div class="result-div"></div>
+        <input type="button" class="less" value="<" >
+        <input type="button" class="greater" value=">"><br>
+        <input type="button" class="equal" value="This is it!"><br>
+        <div class="hit-points">0 tries of 0</div>
+    </div>
+</div>
+
+    <script src="binaryGuessing.js"></script>
+</body>
+</html>
